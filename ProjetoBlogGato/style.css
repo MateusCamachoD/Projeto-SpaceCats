@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --base-color: #ffffff;
+  --font-color: #121214;
+  --h1-h2-h3-color: #202024;
+  --header-color: #065e7c;
+  --footer-color: #387e96;
+}
+
+html,
+body,
+input {
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header,
+nav {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  font-weight: 700;
+  padding: 1.2rem 2.8rem;
+  background: var(--header-color);
+}
+
+header form {
+  flex: 1;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 1.6rem;
+  background-color: var(--base-color);
+  opacity: 20%;
+  border: 0;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.cat {
+  width: 100%;
+}
+
+.container1 h1 button p,
+.container2 {
+  padding: 2.4rem;
+}
+
+.container1 h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+}
+
+.container1 button {
+  border-radius: 50%;
+  border-style: none;
+  border-color: none;
+  cursor: pointer;
+  background-color: var(--base-color);
+  margin: 0.8rem 0.8rem 0 0;
+}
+
+.container1 p {
+  margin-top: 3.1rem;
+}
+
+.container2 h2 {
+  margin-bottom: 3.2rem;
+}
+
+.container2 figure {
+  margin-bottom: 3.2rem;
+}
+
+.item h3 {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+}
+
+.item {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.item img:hover,
+.cat:hover {
+  filter: hue-rotate(1deg) contrast(101%) saturate(200%);
+  transform: scale(1.02);
+}
+
+footer {
+  background-color: var(--footer-color);
+}
+
+footer p {
+  text-align: center;
+  padding: 1.6rem;
+  font-weight: 600;
+}
+
+@media (min-width: 780px) {
+  main {
+    display: flex;
+    padding: 4.4rem 11rem;
+  }
+
+  .cat {
+    width: 80rem;
+    height: 40rem;
+    border-radius: 0.5rem;
+  }
+
+  .container1 h1 {
+    display: inline-block;
+    margin-top: 3.2rem;
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+    font-weight: 700;
+  }
+
+  .container1 .buttons {
+    display: inline-block;
+    gap: 1.2rem;
+    margin-left: 35rem;
+  }
+
+  .container1 p {
+    max-width: 80rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+
+  .container2 {
+    padding: 0 0 0 3.4rem;
+  }
+}
